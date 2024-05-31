@@ -456,6 +456,133 @@ form button {
 /*=================================
   footer styling starts here
 =================================*/
+footer {
+  padding-top: 32px;
+  background-color: #205ba5;
+}
+
+.footer-up .wrapper {
+  padding-right: 76px;
+  margin: 0px auto 46px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .logo a {
+  padding-bottom: 6px;
+  font-size: 27px;
+}
+
+.footer-left p {
+  padding-top: 8px;
+  padding-right: 20px;
+  border-top: 1.5px solid #369ee361;
+  color: aliceblue;
+  font-size: 12px;
+}
+
+.footer-center {
+  padding-top: 5px;
+  padding-right: 25px;
+  color: aliceblue;
+  font-size: 12px;
+}
+
+.footer-nav-list {
+  padding: 15px 0px;
+}
+
+.footer-nav-list a {
+  color: aliceblue;
+  line-height: 18px;
+}
+
+.footer-right span {
+  color: aliceblue;
+  font-size: 12px;
+}
+
+.footer-left p span {
+  font-weight: 700;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-media a {
+  float: left;
+  text-indent: -999px;
+}
+
+.social-media a::before {
+  padding: 5px 7px;
+  border-radius: 30px;
+  background-color: aliceblue;
+  font-family: 'FontAwesome';
+  float: right;
+  text-indent: 0px;
+}
+
+.facebook::before {
+  content: '\f09a';
+  color: #153c74;
+}
+
+.linkedin::before {
+  content: '\f0e1';
+  color: #205ba5;
+}
+
+.youtube::before {
+  content: '\f04b';
+  color: #ce1e1e;
+}
+
+.twitter::before {
+  content: '\f099';
+  color: #369fe3;
+}
+
+.footer-down {
+  background-color: #00000052;
+}
+
+.footer-down .wrapper {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-down-list {
+  display: flex;
+}
+
+.footer-down-list a {
+  padding: 0px 5px;
+  border-right: 1px solid #fff;
+  color: aliceblue;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.footer-down-list .last-link {
+  border-right: none;
+}
+
+.footer-down span {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  font-size: 10px;
+}
 
 /*=================================
   footer styling ends here
