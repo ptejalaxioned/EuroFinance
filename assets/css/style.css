@@ -208,6 +208,7 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+
 .single-capital::first-letter {
   text-transform: uppercase;
 }
@@ -218,6 +219,9 @@ li {
 header {
   padding-bottom: 0px;
   padding-top: 20px;
+  position: relative;
+  top: 0%;
+  z-index: 2;
 }
 
 .header-up .wrapper {
@@ -253,7 +257,6 @@ header {
 }
 
 header {
-  background-color: black;
 }
 
 .header-right {
@@ -297,7 +300,7 @@ header {
 }
 
 .header-down {
-  background-color: #2260ab79;
+  background-color: #2b7dc5b2;
 }
 .header-down a {
   color: aliceblue;
@@ -308,6 +311,42 @@ header {
 
 /*=================================
   main styling starts here
+=================================*/
+/*=================================
+  banner styling starts here
+=================================*/
+.banner img {
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+}
+
+.banner .wrapper {
+  height: 47.5vh;
+  position: relative;
+}
+
+.banner-down {
+  width: 59%;
+  position: absolute;
+  z-index: 3;
+  bottom: 33%;
+  left: 0%;
+  color: aliceblue;
+}
+
+.banner-down p {
+  color: #245da3;
+  font-size: 20px;
+}
+
+.banner-down h2 {
+  font-size: 27px;
+  line-height: 51px;
+}
+/*=================================
+  banner styling ends here
 =================================*/
 
 /*=================================
