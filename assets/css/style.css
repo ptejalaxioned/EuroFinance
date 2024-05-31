@@ -225,7 +225,7 @@ header {
 }
 
 .header-up .wrapper {
-  margin-bottom: 42px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -258,14 +258,14 @@ header {
 
 .header-right {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   gap: 0px;
 }
 
 .header-right button,
 .header-right input {
-  padding: 7px;
+  padding: 8px;
   border-radius: none;
   border: none;
   font-size: 10px;
@@ -297,11 +297,13 @@ header {
 }
 
 .header-down {
-  background-color: #2b7dc5b2;
+  background-color: #369ee39f;
 }
+
 .header-down a {
   color: aliceblue;
 }
+
 /*=================================
   Header styling ends here
 =================================*/
@@ -328,7 +330,7 @@ header {
   width: 59%;
   position: absolute;
   z-index: 3;
-  bottom: 33%;
+  bottom: 30%;
   left: 0%;
   color: aliceblue;
 }
@@ -413,14 +415,16 @@ form {
 }
 
 label input[type='radio'] {
-  width: 3%;
+  width: 4%;
+  height: 13px;
+  text-align: center;
 }
 
 .yes-no label:nth-child(2) {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .yes-no label:last-child {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .privacy-para {
