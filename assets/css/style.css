@@ -194,7 +194,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%;
+  width: 52%;
   margin: 0 auto;
 }
 *,
@@ -211,28 +211,36 @@ li {
 .single-capital::first-letter {
   text-transform: uppercase;
 }
-
 .first-capital {
   text-transform: capitalize;
 }
 
-.header-up {
+header {
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+.header-up .wrapper {
+  margin-bottom: 42px;
   display: flex;
   justify-content: space-between;
 }
+
 .logo {
-  width: 30%;
   display: flex;
 }
+
 .logo a {
-  font-size: 40px;
   color: aliceblue;
+  font-size: 37px;
   word-spacing: -8px;
 }
+
 .corner {
   float: left;
   text-indent: -9999px;
 }
+
 .corner::before {
   content: '\f078';
   color: aqua;
@@ -245,25 +253,53 @@ li {
 }
 
 header {
-  padding: 20px;
   background-color: black;
 }
+
 .header-right {
   display: flex;
   align-items: end;
   justify-content: center;
   gap: 0px;
 }
+
 .header-right button,
 .header-right input {
-  padding: 10px;
+  padding: 7px;
   border-radius: none;
-
   border: none;
+  font-size: 10px;
+}
+
+.header-left {
+  width: 40%;
 }
 
 .header-right button {
-  background-color: blue;
+  background-color: #245da3;
+  color: aliceblue;
+}
+
+.nav-list {
+  padding: 8px;
+  display: flex;
+  font-size: 12px;
+}
+
+.nav-list li {
+  padding: 0px 8px;
+  border-right: 1px solid #245da3;
+}
+
+.nav-list li:last-child {
+  border-right: none;
+  color: black;
+}
+
+.header-down {
+  background-color: #2260ab79;
+}
+.header-down a {
   color: aliceblue;
 }
 /*=================================
