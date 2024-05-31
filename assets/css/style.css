@@ -256,9 +256,6 @@ header {
   transform: rotate(225deg);
 }
 
-header {
-}
-
 .header-right {
   display: flex;
   align-items: end;
@@ -279,7 +276,7 @@ header {
 }
 
 .header-right button {
-  background-color: #245da3;
+  background-color: #369fe3;
   color: aliceblue;
 }
 
@@ -291,7 +288,7 @@ header {
 
 .nav-list li {
   padding: 0px 8px;
-  border-right: 1px solid #245da3;
+  border-right: 1px solid #369fe3;
 }
 
 .nav-list li:last-child {
@@ -337,7 +334,7 @@ header {
 }
 
 .banner-down p {
-  color: #245da3;
+  color: #369fe3;
   font-size: 20px;
 }
 
@@ -347,6 +344,109 @@ header {
 }
 /*=================================
   banner styling ends here
+=================================*/
+/*=================================
+  form styling starts here
+=================================*/
+.form .wrapper {
+  margin: 30px auto 96px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-up {
+  display: flex;
+  font-size: 10px;
+  font-weight: 300;
+  gap: 7px;
+}
+
+.form-up span:last-child {
+  font-weight: 600;
+}
+.arrow {
+  float: left;
+  text-indent: -9999px;
+}
+
+.arrow::before {
+  content: '\3e';
+  padding: 2.5px;
+  font-family: 'FontAwesome';
+  font-size: 5px;
+  float: right;
+  text-indent: 0px;
+}
+
+.form h3 {
+  font-size: 22px;
+  color: #369fe3;
+  margin: 20px 0px;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div label {
+  color: #504e4e;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15px;
+  padding-bottom: 7px;
+}
+
+.form-div input,
+.form-div select {
+  width: 30%;
+  height: 4.5vh;
+}
+
+.form-div select {
+  background-color: #369fe3;
+  color: aliceblue;
+}
+
+label input[type='radio'] {
+  width: 3%;
+}
+
+.yes-no label:nth-child(2) {
+  margin-top: 20px;
+}
+.yes-no label:last-child {
+  margin-bottom: 10px;
+}
+
+.privacy-para {
+  color: #504e4e;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+form a {
+  font-size: 10px;
+  color: #369fe3;
+  font-weight: 600;
+}
+
+form button {
+  width: 19%;
+  padding: 7px;
+  border: none;
+  border-radius: 2px;
+  background-color: #369fe3;
+  color: aliceblue;
+  font-size: 12px;
+}
+/*=================================
+  form styling ends here
 =================================*/
 
 /*=================================
