@@ -647,14 +647,171 @@ footer .logo a {
   color: aliceblue;
   font-size: 10px;
 }
-
 /*=================================
   footer styling ends here
 =================================*/
 
+/*media query for 480px starts here*/
+@media only screen and (min-width: 480px) {
+  /*=================================
+  header styling starts here
+=================================*/
+  .wrapper {
+    width: 90%;
+    gap: 22px;
+  }
+
+  .logo a {
+    font-size: 31px;
+  }
+
+  .header-right {
+    align-items: center;
+  }
+
+  .header-right input {
+    padding: 4px;
+  }
+
+  .header-right button {
+    padding: 3.5px;
+  }
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
+
+  .line {
+    border-color: grey;
+  }
+
+  .logo a {
+    font-size: 26px;
+  }
+
+  .header-left {
+    width: 50%;
+  }
+
+  .header-right {
+    width: 34%;
+  }
+
+  .header-right input {
+    width: 80%;
+  }
+
+  .header-right button {
+    width: 30%;
+  }
+
+  .header-up .wrapper {
+    padding-bottom: 14px;
+  }
+
+  .nav-list {
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 20px;
+  }
+
+  .nav-list {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    display: none;
+    z-index: 10;
+    top: 100%;
+    right: 0%;
+    flex-direction: column;
+    background-color: #205ba5;
+    text-align: center;
+  }
+
+  /*=================================
+header styling ends here
+=================================*/
+  /*=================================
+banner styling starts here
+=================================*/
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .banner-down {
+    width: 87%;
+    top: 15%;
+  }
+  .banner .wrapper {
+    z-index: 1;
+  }
+
+  .banner .wrapper {
+    height: 39vh;
+  }
+  /*=================================
+banner styling ends here
+=================================*/
+  /*=================================
+form styling starts here
+=================================*/
+  .form .wrapper {
+    width: 85%;
+  }
+
+  .form .wrapper {
+    margin: 20px auto 40px;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 60%;
+  }
+
+  /*=================================
+form styling ends here
+=================================*/
+  /*=================================
+footer styling starts here
+=================================*/
+  .footer-up .wrapper {
+    width: 85%;
+    margin: 0px auto 26px;
+    flex-direction: column;
+  }
+
+  .footer-nav-list {
+    padding-bottom: 0%;
+    padding-top: 9px;
+  }
+
+  .social-media {
+    margin-left: 29px;
+    gap: 8px;
+  }
+
+  .footer-down-list,
+  .footer-down .wrapper {
+    flex-direction: column;
+  }
+
+  .footer-down-list a {
+    border-right: none;
+  }
+  /*=================================
+footer styling ends here
+=================================*/
+}
+
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 480px) {
+/*media query for 375px starts here*/
+@media only screen and (min-width: 375px) {
   /*=================================
   header styling starts here
 =================================*/
@@ -736,7 +893,7 @@ footer .logo a {
   }
 
   .banner-down {
-    width: 87%;
+    width: 84%;
     top: 15%;
   }
   .banner .wrapper {
@@ -798,4 +955,14 @@ footer .logo a {
   /*=================================
   footer styling ends here
 =================================*/
+}
+
+@media only screen and (max-width: 995px) {
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
+  .nav-list {
+    display: none;
+  }
 }
