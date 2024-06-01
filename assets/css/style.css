@@ -767,4 +767,28 @@ footer .logo a {
   /*=================================
   form styling ends here
 =================================*/
+  /*=================================
+  footer styling starts here
+=================================*/
+  .footer-up .wrapper {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .social-media {
+    gap: 8px;
+    margin-left: 29px;
+  }
+
+  .footer-down-list,
+  .footer-down .wrapper {
+    flex-direction: column;
+  }
+
+  .footer-down-list a {
+    border-right: none;
+  }
+  /*=================================
+  footer styling ends here
+=================================*/
 }
