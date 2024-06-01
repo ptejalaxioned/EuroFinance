@@ -575,6 +575,7 @@ footer .logo a {
 }
 
 .social-media {
+  padding-left: 6px;
   margin-top: 10px;
   display: flex;
   gap: 15px;
@@ -661,7 +662,7 @@ footer .logo a {
 
   .social-media a {
     float: left;
-    text-indent: -1120px;
+    text-indent: -1159px;
   }
 
   .form .wrapper {
@@ -696,11 +697,11 @@ footer .logo a {
 /*media query for 1280px starts here*/
 @media only screen and (max-width: 1280px) {
   .banner-down {
-    width: 57%;
+    width: 47%;
     bottom: 39%;
   }
   .social-media {
-    padding-left: 28px;
+    padding-left: 6px;
   }
 
   .footer-up .wrapper {
@@ -1199,7 +1200,7 @@ footer .logo a {
   }
 
   .header-left {
-    width: 50%;
+    width: 56%;
   }
 
   .header-right {
@@ -1283,6 +1284,9 @@ form styling starts here
     width: 60%;
   }
 
+  form button {
+    width: 18%;
+  }
   /*=================================
 form styling ends here
 =================================*/
@@ -1473,5 +1477,35 @@ footer styling ends here
   }
   .nav-list {
     display: none;
+  }
+}
+
+/*================================= 
+ Hover styling starts here
+ =================================*/
+@media only screen and (min-width: 995px) {
+  .header-down a:hover {
+    color: #808080;
+  }
+
+  .header-right button:hover {
+    background-color: #808080;
+    color: aliceblue;
+  }
+
+  form button:hover {
+    background-color: #808080;
+  }
+
+  .footer-nav-list a:hover {
+    color: #808080;
+  }
+
+  .footer-down-list a:hover {
+    color: #808080;
+  }
+
+  .social-media a:hover::before {
+    background-color: #808080;
   }
 }
