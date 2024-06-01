@@ -650,6 +650,39 @@ footer .logo a {
   footer styling ends here
 =================================*/
 
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .banner-down {
+    width: 37%;
+    bottom: 37%;
+  }
+
+  .banner .wrapper {
+    height: 33.5vh;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 26%;
+  }
+
+  form button {
+    width: 14%;
+  }
+
+  .social-media {
+    margin-left: 25px;
+  }
+
+  .footer-up .wrapper {
+    padding-right: 119px;
+  }
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
   /*=================================
