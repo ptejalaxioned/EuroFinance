@@ -650,6 +650,26 @@ footer .logo a {
   footer styling ends here
 =================================*/
 
+/*media query for 1360px starts here*/
+@media only screen and (max-width: 1360px) {
+  .social-media a {
+    float: left;
+    text-indent: -1076px;
+  }
+
+  .social-media {
+    margin-left: 20px;
+  }
+
+  .banner-down {
+    width: 46%;
+  }
+
+  .wrapper {
+    width: 60%;
+  }
+}
+
 /*media query for 1280px starts here*/
 @media only screen and (max-width: 1280px) {
   .banner-down {
