@@ -649,6 +649,29 @@ footer .logo a {
 /*=================================
   footer styling ends here
 =================================*/
+/*media query for 1360px starts here*/
+@media only screen and (max-width: 1440px) {
+  .wrapper {
+    width: 66%;
+  }
+
+  .banner-down {
+    width: 40%;
+  }
+
+  .social-media a {
+    float: left;
+    text-indent: -1120px;
+  }
+
+  .form .wrapper {
+    margin: 68px auto 96px;
+  }
+
+  .social-media {
+    margin-left: 20px;
+  }
+}
 
 /*media query for 1360px starts here*/
 @media only screen and (max-width: 1360px) {
