@@ -159,41 +159,47 @@
               enter your detailes to subscribe to our newsletter
             </h3>
             <form action="#FIXME">
-              <div class="form-div first-capital">
+              <div class="fname-div form-div first-capital">
                 <label>first name</label>
-                <input type="text" id="first-name" />
+                <input type="text" id="first-name" name="fname" />
               </div>
-              <div class="form-div first-capital">
+              <div class="lname-div form-div first-capital">
                 <label>last name</label>
-                <input type="text" id="last-name" />
+                <input type="text" id="last-name" name="lname" />
               </div>
-              <div class="form-div first-capital">
+              <div class="position-div form-div first-capital">
                 <label>position</label>
-                <input type="text" id="position" />
+                <input type="text" id="position" name="position" />
               </div>
-              <div class="form-div first-capital">
+              <div class="company-div form-div first-capital">
                 <label>company</label>
-                <input type="text" id="company" />
+                <input type="text" id="company" name="company" />
               </div>
-              <div class="form-div first-capital">
+              <div class="company-type-div form-div first-capital">
                 <label>company type</label>
-                <select id="company-type">
-                  <option value="1">-select-</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
+                <select id="company-type" name="company-type">
+                  <option value="-select-">-select-</option>
+                  <option value="Government Company">Government Company</option>
+                  <option value="Foreign Company">Foreign Company</option>
+                  <option value="Charitable Company">Charitable Company</option>
+                  <option value="Associate Company">Associate Company</option>
+                  <option value="Public Company">Public Company</option>
+                  <option value="Company in terms of Access to Capital">
+                    Company in terms of Access to Capital
+                  </option>
                 </select>
               </div>
-              <div class="form-div first-capital">
+              <div class="country-div form-div first-capital">
                 <label>country</label>
-                <select id="country">
-                  <option value="1">-Choose-</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
+                <select id="country" name="country">
+                  <option value="-Choose-">-Choose-</option>
+                  <option value="India">India</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Japan">Japan</option>
+                  <option value="New zealand">New zealand</option>
                 </select>
               </div>
-              <div class="form-div first-capital">
+              <div class="email-div form-div first-capital">
                 <label>work email</label>
                 <input type="email" id="work-email" />
               </div>
@@ -203,8 +209,12 @@
                   Provident esse nemo saepe sit enim quisquam, consectetur
                   harum. Ratione, veniam eveniet. Lorem ipsum dolor sit amet?
                 </label>
-                <label> <input type="radio" id="yes" value="yes" />Yes </label>
-                <label> <input type="radio" id="no" value="no" />No </label>
+                <label>
+                  <input type="radio" id="yes" value="yes" name="question" />Yes
+                </label>
+                <label>
+                  <input type="radio" id="no" value="no" name="question" />No
+                </label>
               </div>
               <div class="privacy-para">
                 <p>
