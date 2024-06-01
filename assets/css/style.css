@@ -655,6 +655,9 @@ footer .logo a {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 480px) {
+  /*=================================
+  header styling starts here
+=================================*/
   .wrapper {
     width: 95%;
     gap: 22px;
@@ -720,6 +723,12 @@ footer .logo a {
     display: none;
   }
 
+  /*=================================
+  header styling ends here
+=================================*/
+  /*=================================
+  banner styling starts here
+=================================*/
   img {
     width: 100%;
     height: 50vh;
@@ -737,4 +746,25 @@ footer .logo a {
   .banner .wrapper {
     height: 39vh;
   }
+  /*=================================
+  banner styling ends here
+=================================*/
+  /*=================================
+  form styling starts here
+=================================*/
+  .form .wrapper {
+    width: 85%;
+  }
+  .form .wrapper {
+    margin: 20px auto 96px;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 60%;
+  }
+
+  /*=================================
+  form styling ends here
+=================================*/
 }
