@@ -650,6 +650,21 @@ footer .logo a {
   footer styling ends here
 =================================*/
 
+/*media query for 1280px starts here*/
+@media only screen and (max-width: 1280px) {
+  .banner-down {
+    width: 57%;
+    bottom: 39%;
+  }
+  .social-media {
+    padding-left: 28px;
+  }
+
+  .footer-up .wrapper {
+    padding-right: 25px;
+  }
+}
+
 /*media query for 1024px starts here*/
 @media only screen and (max-width: 1024px) {
   .wrapper {
