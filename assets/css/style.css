@@ -8,13 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,17 +98,30 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
@@ -50,7 +137,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -66,8 +155,12 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -75,11 +168,12 @@ sub { bottom: -.25em; }
 .cf:before,
 .cf:after {
   display: table;
-  content: " ";
+  content: ' ';
 }
 
-.cf:after { clear: both; }
-
+.cf:after {
+  clear: both;
+}
 
 /*for all*/
 body {
@@ -87,9 +181,9 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
@@ -100,7 +194,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 52%;
   margin: 0 auto;
 }
 *,
@@ -115,48 +209,1303 @@ li {
   Header styling starts here
 =================================*/
 
+.single-capital::first-letter {
+  text-transform: uppercase;
+}
+.first-capital {
+  text-transform: capitalize;
+}
 
+header {
+  padding-bottom: 0px;
+  padding-top: 20px;
+  position: relative;
+  top: 0%;
+  z-index: 2;
+}
 
+.header-up .wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.hamburger {
+  display: none;
+  position: relative;
+  padding-top: 0px;
+}
 
+.hamburger {
+  padding: 10px 0px 0px;
+  display: flex;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger:hover .line2 {
+  display: none;
+  transition: 0.1s;
+}
+
+/* .hamburger:hover .line1 {
+  width: 100%;
+  transition: 0.1s;
+  rotate: 140deg;
+  width: 35px;
+  margin-left: -3px;
+  margin-right: -25px;
+}
+
+.hamburger:hover .line3 {
+  width: 100%;
+  transition: 0.1s;
+  rotate: 38deg;
+  width: 35px;
+  margin-left: -3px;
+  margin-top: -3px;
+} */
+
+.hamburger:hover .line1 {
+  -webkit-transform: rotate(-45deg) translateY(4px);
+  transform: rotate(-45deg) translateY(6px);
+}
+
+.hamburger:hover .line3 {
+  -webkit-transform: rotate(45deg) translateY(-4px);
+  transform: rotate(45deg) translateY(-6px);
+}
+
+.line {
+  content: '';
+  width: 100%;
+  border-bottom: 3.5px solid black;
+  border-radius: 8px;
+  display: inline-block;
+  transform: translateY(-5px);
+  width: 25px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo a {
+  color: aliceblue;
+  font-size: 37px;
+  word-spacing: -8px;
+}
+
+.corner {
+  float: left;
+  text-indent: -9999px;
+}
+
+.corner::before {
+  content: '\f078';
+  color: aqua;
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  font-weight: lighter;
+  float: right;
+  text-indent: 0px;
+  transform: rotate(225deg);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+.header-right button,
+.header-right input {
+  padding: 8px;
+  border-radius: none;
+  border: none;
+  font-size: 10px;
+}
+
+.header-left {
+  width: 40%;
+}
+
+.header-right button {
+  background-color: #369fe3;
+  color: aliceblue;
+}
+
+.nav-list {
+  padding: 8px;
+  display: flex;
+  font-size: 12px;
+}
+
+.nav-list li {
+  padding: 0px 8px;
+  border-right: 1px solid #369fe3;
+}
+
+.nav-list li:last-child {
+  border-right: none;
+  color: black;
+}
+
+.header-down {
+  background-color: #369ee39f;
+}
+
+.header-down a {
+  color: aliceblue;
+}
 
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
 
 /*=================================
   main styling starts here
 =================================*/
+/*=================================
+  banner styling starts here
+=================================*/
+.banner img {
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+}
 
+.banner .wrapper {
+  height: 47.5vh;
+  position: relative;
+}
 
+.banner-down {
+  width: 59%;
+  position: absolute;
+  z-index: 3;
+  bottom: 30%;
+  left: 0%;
+  color: aliceblue;
+}
 
+.banner-down p {
+  color: #369fe3;
+  font-size: 20px;
+}
 
+.banner-down h2 {
+  font-size: 27px;
+  line-height: 51px;
+}
+/*=================================
+  banner styling ends here
+=================================*/
+/*=================================
+  form styling starts here
+=================================*/
+.form .wrapper {
+  margin: 30px auto 96px;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.form-up {
+  display: flex;
+  font-size: 10px;
+  font-weight: 300;
+  gap: 7px;
+}
 
+.form-up span:last-child {
+  font-weight: 600;
+}
+
+.arrow {
+  float: left;
+  text-indent: -9999px;
+}
+
+.arrow::before {
+  content: '\3e';
+  padding: 2.5px;
+  font-family: 'FontAwesome';
+  font-size: 5px;
+  float: right;
+  text-indent: 0px;
+}
+
+.form h3 {
+  font-size: 22px;
+  color: #369fe3;
+  margin: 20px 0px;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div label {
+  color: #504e4e;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15px;
+  padding-bottom: 7px;
+}
+
+.form-div input,
+.form-div select {
+  width: 30%;
+  height: 4.5vh;
+}
+
+.form-div select {
+  background-color: #369fe3;
+  color: aliceblue;
+}
+
+label input[type='radio'] {
+  width: 4%;
+  height: 13px;
+  text-align: center;
+}
+
+.yes-no label:nth-child(2) {
+  margin-top: 15px;
+}
+
+.yes-no label:last-child {
+  margin-bottom: 3px;
+}
+
+.privacy-para {
+  color: #504e4e;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+form a {
+  font-size: 10px;
+  color: #369fe3;
+  font-weight: 600;
+}
+
+form button {
+  width: 19%;
+  padding: 7px;
+  border: none;
+  border-radius: 2px;
+  background-color: #369fe3;
+  color: aliceblue;
+  font-size: 12px;
+}
+/*=================================
+  form styling ends here
+=================================*/
 
 /*=================================
   main styling ends here
 =================================*/
-
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
+footer {
+  padding-top: 32px;
+  background-color: #205ba5;
+}
 
+.footer-up .wrapper {
+  padding-right: 76px;
+  margin: 0px auto 46px;
+  display: flex;
+  justify-content: space-between;
+}
 
+footer .logo a {
+  padding-bottom: 6px;
+  font-size: 27px;
+}
 
+.footer-left p {
+  padding-top: 8px;
+  padding-right: 20px;
+  border-top: 1.5px solid #369ee361;
+  color: aliceblue;
+  font-size: 12px;
+}
 
+.footer-center {
+  padding-top: 5px;
+  padding-right: 25px;
+  color: aliceblue;
+  font-size: 12px;
+}
 
+.footer-nav-list {
+  padding: 15px 0px;
+}
 
+.footer-nav-list a {
+  color: aliceblue;
+  line-height: 18px;
+}
 
- /*=================================
+.footer-right span {
+  color: aliceblue;
+  font-size: 12px;
+}
+
+.footer-left p span {
+  font-weight: 700;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media {
+  padding-left: 6px;
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-media a {
+  float: left;
+  text-indent: -999px;
+}
+
+.social-media a::before {
+  padding: 5px 7px;
+  border-radius: 30px;
+  background-color: aliceblue;
+  font-family: 'FontAwesome';
+  float: right;
+  text-indent: 0px;
+}
+
+.facebook::before {
+  content: '\f09a';
+  color: #153c74;
+}
+
+.linkedin::before {
+  content: '\f0e1';
+  color: #205ba5;
+}
+
+.youtube::before {
+  content: '\f04b';
+  color: #ce1e1e;
+}
+
+.twitter::before {
+  content: '\f099';
+  color: #369fe3;
+}
+
+.footer-down {
+  background-color: #00000052;
+}
+
+.footer-down .wrapper {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-down-list {
+  display: flex;
+}
+
+.footer-down-list a {
+  padding: 0px 5px;
+  border-right: 1px solid #fff;
+  color: aliceblue;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.footer-down-list .last-link {
+  border-right: none;
+}
+
+.footer-down span {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  font-size: 10px;
+}
+/*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
+/*media query for 1360px starts here*/
+@media only screen and (max-width: 1440px) {
+  .wrapper {
+    width: 66%;
+  }
 
-/*media query starts*/
+  .banner-down {
+    width: 40%;
+  }
+
+  .social-media a {
+    float: left;
+    text-indent: -1159px;
+  }
+
+  .form .wrapper {
+    margin: 68px auto 96px;
+  }
+
+  .social-media {
+    margin-left: 20px;
+  }
+}
+
+/*media query for 1360px starts here*/
+@media only screen and (max-width: 1360px) {
+  .social-media a {
+    float: left;
+    text-indent: -1076px;
+  }
+
+  .social-media {
+    margin-left: 20px;
+  }
+
+  .banner-down {
+    width: 46%;
+  }
+
+  .wrapper {
+    width: 60%;
+  }
+}
+
+/*media query for 1280px starts here*/
+@media only screen and (max-width: 1280px) {
+  .banner-down {
+    width: 47%;
+    bottom: 39%;
+  }
+  .social-media {
+    padding-left: 6px;
+  }
+
+  .footer-up .wrapper {
+    padding-right: 25px;
+  }
+}
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .banner-down {
+    width: 37%;
+    bottom: 37%;
+  }
+
+  .banner .wrapper {
+    height: 33.5vh;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 26%;
+  }
+
+  form button {
+    width: 14%;
+  }
+
+  .social-media {
+    margin-left: 25px;
+  }
+
+  .footer-up .wrapper {
+    padding-right: 119px;
+  }
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  /*=================================
+  header styling starts here
+=================================*/
+  .wrapper {
+    gap: 22px;
+    width: 90%;
+  }
 
+  .logo a {
+    font-size: 34px;
+  }
 
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
 
-}  
+  .line {
+    border-color: grey;
+  }
+
+  .header-left {
+    width: 50%;
+  }
+
+  .header-right {
+    width: 29%;
+  }
+
+  .header-right input {
+    width: 80%;
+  }
+
+  .header-right button {
+    width: 30%;
+  }
+
+  .header-up .wrapper {
+    padding-bottom: 14px;
+  }
+
+  .nav-list {
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 20px;
+  }
+
+  .nav-list {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    display: none;
+    z-index: 10;
+    top: 100%;
+    right: 0%;
+    flex-direction: column;
+    background-color: #205ba5;
+    text-align: center;
+  }
+
+  /*=================================
+  header styling ends here
+=================================*/
+  /*=================================
+  banner styling starts here
+=================================*/
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .banner-down {
+    width: 42%;
+    top: 15%;
+  }
+  .banner .wrapper {
+    z-index: 1;
+  }
+
+  .banner .wrapper {
+    height: 39vh;
+  }
+  /*=================================
+  banner styling ends here
+=================================*/
+  /*=================================
+  form styling starts here
+=================================*/
+  .form .wrapper {
+    width: 85%;
+  }
+
+  .form .wrapper {
+    margin: 20px auto 40px;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 30%;
+  }
+
+  /*=================================
+  form styling ends here
+=================================*/
+  /*=================================
+  footer styling starts here
+=================================*/
+  .footer-up .wrapper {
+    width: 85%;
+    margin: 0px auto 26px;
+  }
+
+  .footer-nav-list {
+    padding-bottom: 0%;
+    padding-top: 9px;
+  }
+
+  .social-media {
+    margin-left: 29px;
+    gap: 8px;
+  }
+
+  .footer-down-list a {
+    padding-right: 6px;
+    border-right: 1px solid #fff;
+  }
+  /*=================================
+  footer styling ends here
+=================================*/
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  /*=================================
+  header styling starts here
+=================================*/
+  .wrapper {
+    width: 95%;
+    gap: 22px;
+  }
+
+  .logo a {
+    font-size: 34px;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
+
+  .line {
+    border-color: grey;
+  }
+
+  .header-left {
+    width: 50%;
+  }
+
+  .header-right {
+    width: 29%;
+  }
+
+  .header-right input {
+    width: 80%;
+  }
+
+  .header-right button {
+    width: 30%;
+  }
+
+  .header-up .wrapper {
+    padding-bottom: 14px;
+  }
+
+  .nav-list {
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 20px;
+  }
+
+  .nav-list {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    display: none;
+    z-index: 10;
+    top: 100%;
+    right: 0%;
+    flex-direction: column;
+    background-color: #205ba5;
+    text-align: center;
+  }
+
+  /*=================================
+  header styling ends here
+=================================*/
+  /*=================================
+  banner styling starts here
+=================================*/
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .banner-down {
+    width: 49%;
+    top: 15%;
+  }
+  .banner .wrapper {
+    z-index: 1;
+  }
+
+  .banner .wrapper {
+    height: 39vh;
+  }
+  /*=================================
+  banner styling ends here
+=================================*/
+  /*=================================
+  form styling starts here
+=================================*/
+  .form .wrapper {
+    width: 85%;
+  }
+
+  .form .wrapper {
+    margin: 20px auto 40px;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 42%;
+  }
+
+  /*=================================
+  form styling ends here
+=================================*/
+  /*=================================
+  footer styling starts here
+=================================*/
+  .footer-up .wrapper {
+    width: 85%;
+    margin: 0px auto 26px;
+  }
+
+  .footer-nav-list {
+    padding-bottom: 0%;
+    padding-top: 9px;
+  }
+
+  .social-media {
+    margin-left: 29px;
+    gap: 8px;
+  }
+
+  .footer-down-list a {
+    padding-right: 6px;
+    border-right: 1px solid #fff;
+  }
+  /*=================================
+  footer styling ends here
+=================================*/
+}
+
+/*media query for 640px starts here*/
+@media only screen and (max-width: 640px) {
+  /*=================================
+  header styling starts here
+=================================*/
+  .wrapper {
+    width: 95%;
+    gap: 22px;
+  }
+
+  .logo a {
+    font-size: 34px;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
+
+  .line {
+    border-color: grey;
+  }
+
+  .header-left {
+    width: 50%;
+  }
+
+  .header-right {
+    width: 34%;
+  }
+
+  .header-right input {
+    width: 80%;
+  }
+
+  .header-right button {
+    width: 30%;
+  }
+
+  .header-up .wrapper {
+    padding-bottom: 14px;
+  }
+
+  .nav-list {
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 20px;
+  }
+
+  .nav-list {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    display: none;
+    z-index: 10;
+    top: 100%;
+    right: 0%;
+    flex-direction: column;
+    background-color: #205ba5;
+    text-align: center;
+  }
+
+  /*=================================
+  header styling ends here
+=================================*/
+  /*=================================
+  banner styling starts here
+=================================*/
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .banner-down {
+    width: 64%;
+    top: 15%;
+  }
+  .banner .wrapper {
+    z-index: 1;
+  }
+
+  .banner .wrapper {
+    height: 39vh;
+  }
+  /*=================================
+  banner styling ends here
+=================================*/
+  /*=================================
+  form styling starts here
+=================================*/
+  .form .wrapper {
+    width: 85%;
+  }
+
+  .form .wrapper {
+    margin: 20px auto 40px;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 42%;
+  }
+
+  /*=================================
+  form styling ends here
+=================================*/
+  /*=================================
+  footer styling starts here
+=================================*/
+  .footer-up .wrapper {
+    width: 85%;
+    margin: 0px auto 26px;
+    flex-direction: column;
+  }
+
+  .footer-nav-list {
+    padding-bottom: 0%;
+    padding-top: 9px;
+  }
+
+  .social-media {
+    margin-left: 29px;
+    gap: 8px;
+  }
+
+  .footer-down-list,
+  .footer-down .wrapper {
+    flex-direction: column;
+  }
+
+  .footer-down-list a {
+    border-right: none;
+  }
+  /*=================================
+  footer styling ends here
+=================================*/
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  /*=================================
+  header styling starts here
+=================================*/
+  .wrapper {
+    width: 90%;
+    gap: 22px;
+  }
+
+  .logo a {
+    font-size: 31px;
+  }
+
+  .header-right {
+    align-items: center;
+  }
+
+  .header-right input {
+    padding: 4px;
+  }
+
+  .header-right button {
+    padding: 3.5px;
+  }
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
+
+  .line {
+    border-color: grey;
+  }
+
+  .logo a {
+    font-size: 26px;
+  }
+
+  .header-left {
+    width: 56%;
+  }
+
+  .header-right {
+    width: 34%;
+  }
+
+  .header-right input {
+    width: 80%;
+  }
+
+  .header-right button {
+    width: 30%;
+  }
+
+  .header-up .wrapper {
+    padding-bottom: 14px;
+  }
+
+  .nav-list {
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 20px;
+  }
+
+  .nav-list {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    display: none;
+    z-index: 10;
+    top: 100%;
+    right: 0%;
+    flex-direction: column;
+    background-color: #205ba5;
+    text-align: center;
+  }
+
+  /*=================================
+header styling ends here
+=================================*/
+  /*=================================
+banner styling starts here
+=================================*/
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .banner-down {
+    width: 87%;
+    top: 15%;
+  }
+  .banner .wrapper {
+    z-index: 1;
+  }
+
+  .banner .wrapper {
+    height: 39vh;
+  }
+  /*=================================
+banner styling ends here
+=================================*/
+  /*=================================
+form styling starts here
+=================================*/
+  .form .wrapper {
+    width: 85%;
+  }
+
+  .form .wrapper {
+    margin: 20px auto 40px;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 60%;
+  }
+
+  form button {
+    width: 18%;
+  }
+  /*=================================
+form styling ends here
+=================================*/
+  /*=================================
+footer styling starts here
+=================================*/
+  .footer-up .wrapper {
+    width: 85%;
+    margin: 0px auto 26px;
+    flex-direction: column;
+  }
+
+  .footer-nav-list {
+    padding-bottom: 0%;
+    padding-top: 9px;
+  }
+
+  .social-media {
+    margin-left: 29px;
+    gap: 8px;
+  }
+
+  .footer-down-list,
+  .footer-down .wrapper {
+    flex-direction: column;
+  }
+
+  .footer-down-list a {
+    border-right: none;
+  }
+  /*=================================
+footer styling ends here
+=================================*/
+}
+
+/*media query starts*/
+/*media query for 375px starts here*/
+@media only screen and (max-width: 375px) {
+  /*=================================
+  header styling starts here
+=================================*/
+  .wrapper {
+    width: 95%;
+    gap: 22px;
+  }
+
+  .logo a {
+    font-size: 26px;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
+
+  .line {
+    border-color: grey;
+  }
+
+  .logo a {
+    font-size: 26px;
+  }
+
+  .header-left {
+    width: 50%;
+  }
+
+  .header-right {
+    width: 34%;
+  }
+
+  .header-right input {
+    width: 80%;
+  }
+
+  .header-right button {
+    width: 30%;
+  }
+
+  .header-up .wrapper {
+    padding-bottom: 14px;
+  }
+
+  .nav-list {
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 20px;
+  }
+
+  .nav-list {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    display: none;
+    z-index: 10;
+    top: 100%;
+    right: 0%;
+    flex-direction: column;
+    background-color: #205ba5;
+    text-align: center;
+  }
+
+  /*=================================
+  header styling ends here
+=================================*/
+  /*=================================
+  banner styling starts here
+=================================*/
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .banner-down {
+    width: 84%;
+    top: 15%;
+  }
+  .banner .wrapper {
+    z-index: 1;
+  }
+
+  .banner .wrapper {
+    height: 39vh;
+  }
+  /*=================================
+  banner styling ends here
+=================================*/
+  /*=================================
+  form styling starts here
+=================================*/
+  .form .wrapper {
+    width: 85%;
+  }
+
+  .form .wrapper {
+    margin: 20px auto 40px;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 60%;
+  }
+
+  /*=================================
+  form styling ends here
+=================================*/
+  /*=================================
+  footer styling starts here
+=================================*/
+  .footer-up .wrapper {
+    width: 85%;
+    margin: 0px auto 26px;
+    flex-direction: column;
+  }
+
+  .footer-nav-list {
+    padding-bottom: 0%;
+    padding-top: 9px;
+  }
+
+  .social-media {
+    margin-left: 29px;
+    gap: 8px;
+  }
+
+  .footer-down-list,
+  .footer-down .wrapper {
+    flex-direction: column;
+  }
+
+  .footer-down-list a {
+    border-right: none;
+  }
+  /*=================================
+  footer styling ends here
+=================================*/
+}
+
+@media only screen and (max-width: 995px) {
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
+  .nav-list {
+    display: none;
+  }
+}
+
+/*================================= 
+ Hover styling starts here
+ =================================*/
+@media only screen and (min-width: 995px) {
+  .header-down a:hover {
+    color: #808080;
+  }
+
+  .header-right button:hover {
+    background-color: #808080;
+    color: aliceblue;
+  }
+
+  form button:hover {
+    background-color: #808080;
+  }
+
+  .footer-nav-list a:hover {
+    color: #808080;
+  }
+
+  .footer-down-list a:hover {
+    color: #808080;
+  }
+
+  .social-media a:hover::before {
+    background-color: #808080;
+  }
+}
