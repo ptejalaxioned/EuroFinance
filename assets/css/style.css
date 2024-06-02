@@ -509,6 +509,10 @@ form button {
   color: aliceblue;
   font-size: 12px;
 }
+
+.div-span {
+  color: #ce1e1e;
+}
 /*=================================
   form styling ends here
 =================================*/
@@ -579,6 +583,7 @@ footer .logo a {
   margin-top: 10px;
   display: flex;
   gap: 15px;
+  margin-left: 0px;
 }
 
 .social-media a {
@@ -668,10 +673,6 @@ footer .logo a {
   .form .wrapper {
     margin: 68px auto 96px;
   }
-
-  .social-media {
-    margin-left: 20px;
-  }
 }
 
 /*media query for 1360px starts here*/
@@ -679,10 +680,6 @@ footer .logo a {
   .social-media a {
     float: left;
     text-indent: -1076px;
-  }
-
-  .social-media {
-    margin-left: 20px;
   }
 
   .banner-down {
@@ -699,9 +696,6 @@ footer .logo a {
   .banner-down {
     width: 47%;
     bottom: 39%;
-  }
-  .social-media {
-    padding-left: 6px;
   }
 
   .footer-up .wrapper {
@@ -731,10 +725,6 @@ footer .logo a {
 
   form button {
     width: 14%;
-  }
-
-  .social-media {
-    margin-left: 25px;
   }
 
   .footer-up .wrapper {
@@ -867,7 +857,6 @@ footer .logo a {
   }
 
   .social-media {
-    margin-left: 29px;
     gap: 8px;
   }
 
@@ -1005,7 +994,6 @@ footer .logo a {
   }
 
   .social-media {
-    margin-left: 29px;
     gap: 8px;
   }
 
@@ -1144,7 +1132,6 @@ footer .logo a {
   }
 
   .social-media {
-    margin-left: 29px;
     gap: 8px;
   }
 
@@ -1305,7 +1292,6 @@ footer styling starts here
   }
 
   .social-media {
-    margin-left: 29px;
     gap: 8px;
   }
 
@@ -1453,7 +1439,6 @@ footer styling ends here
   }
 
   .social-media {
-    margin-left: 29px;
     gap: 8px;
   }
 
@@ -1486,26 +1471,32 @@ footer styling ends here
 @media only screen and (min-width: 995px) {
   .header-down a:hover {
     color: #808080;
+    cursor: pointer;
   }
 
   .header-right button:hover {
     background-color: #808080;
     color: aliceblue;
+    cursor: pointer;
   }
 
   form button:hover {
     background-color: #808080;
+    cursor: pointer;
   }
 
   .footer-nav-list a:hover {
     color: #808080;
+    cursor: pointer;
   }
 
   .footer-down-list a:hover {
     color: #808080;
+    cursor: pointer;
   }
 
   .social-media a:hover::before {
     background-color: #808080;
+    cursor: pointer;
   }
 }
