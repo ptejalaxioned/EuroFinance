@@ -18,6 +18,17 @@ let country_div = document.querySelector(".country-div");
 let work_email_div = document.querySelector(".email-div");
 let yes_no_div = document.querySelector(".yes-no");
 
+let hamburger = document.querySelector(".hamburger");
+let nav_list  = document.querySelector(".nav-list ");
+
+
+hamburger.addEventListener("click",()=>{
+  
+    nav_list.style.display="flex"
+  
+})
+
+
 form.addEventListener("submit", (e) => {
   let regx_name = /^[a-zA-Z]{2,20}$/;
   let regx_Pname = /^[a-zA-Z]{4,25}$/;
@@ -183,5 +194,3 @@ function addSpanForSelect(span, input, e, option, span_content) {
 }
 
 
-
-console.log(re)
