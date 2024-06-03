@@ -511,8 +511,13 @@ form button {
 }
 
 .div-span {
-  color: #205ba5;
+  color: #ff0000;
   font-size: 10px;
+}
+
+.input-border{
+  border: 1.5px solid #ff0000;
+  border-radius: 2px;
 }
 /*=================================
   form styling ends here
