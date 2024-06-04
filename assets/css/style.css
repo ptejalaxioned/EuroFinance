@@ -208,7 +208,6 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-
 .single-capital::first-letter {
   text-transform: uppercase;
 }
@@ -350,7 +349,6 @@ header {
 .header-down a {
   color: aliceblue;
 }
-
 /*=================================
   Header styling ends here
 =================================*/
@@ -414,6 +412,9 @@ form {
   gap: 7px;
 }
 
+.form-up a{
+color: #000000;
+}
 .form-up span:last-child {
   font-weight: 600;
 }
@@ -1502,6 +1503,13 @@ footer styling ends here
 
   form button:hover {
     background-color: #808080;
+    cursor: pointer;
+    transition: 2s;
+  }
+
+  .form-up a:hover
+  {
+    color: #808080;
     cursor: pointer;
     transition: 2s;
   }
