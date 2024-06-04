@@ -119,14 +119,14 @@ html {
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] {
+input[type="radio"] {
   vertical-align: text-bottom;
 }
 
 /* Hand cursor on clickable input elements */
 label,
-input[type='button'],
-input[type='submit'],
+input[type="button"],
+input[type="submit"],
 button {
   cursor: pointer;
 }
@@ -168,7 +168,7 @@ sub {
 .cf:before,
 .cf:after {
   display: table;
-  content: ' ';
+  content: " ";
 }
 
 .cf:after {
@@ -217,17 +217,21 @@ li {
 }
 
 header {
+  width: 100%;
   padding-bottom: 0px;
   padding-top: 20px;
-  position: relative;
+  position: absolute;
   top: 0%;
   z-index: 2;
 }
 
 .header-up .wrapper {
-  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
+}
+
+.header-up {
+  padding-bottom: 30px;
 }
 
 .hamburger {
@@ -238,48 +242,33 @@ header {
 
 .hamburger {
   padding: 10px 0px 0px;
-  display: flex;
   display: none;
   justify-content: center;
   flex-direction: column;
   gap: 5px;
 }
 
-.hamburger:hover .line2 {
+.line2-onclick {
   display: none;
   transition: 0.1s;
 }
 
-/* .hamburger:hover .line1 {
-  width: 100%;
-  transition: 0.1s;
-  rotate: 140deg;
-  width: 35px;
-  margin-left: -3px;
-  margin-right: -25px;
+.hamburger-onclick {
+  padding: 0px 0px 0px;
 }
 
-.hamburger:hover .line3 {
-  width: 100%;
-  transition: 0.1s;
-  rotate: 38deg;
-  width: 35px;
-  margin-left: -3px;
-  margin-top: -3px;
-} */
-
-.hamburger:hover .line1 {
+.line1-onclick {
   -webkit-transform: rotate(-45deg) translateY(4px);
   transform: rotate(-45deg) translateY(6px);
 }
 
-.hamburger:hover .line3 {
+.line3-onclicks {
   -webkit-transform: rotate(45deg) translateY(-4px);
   transform: rotate(45deg) translateY(-6px);
 }
 
 .line {
-  content: '';
+  content: "";
   width: 100%;
   border-bottom: 3.5px solid black;
   border-radius: 8px;
@@ -304,9 +293,9 @@ header {
 }
 
 .corner::before {
-  content: '\f078';
+  content: "\f078";
   color: aqua;
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   font-size: 20px;
   font-weight: lighter;
   float: right;
@@ -372,25 +361,24 @@ header {
 /*=================================
   banner styling starts here
 =================================*/
+.banner {
+  position: relative;
+}
 .banner img {
-  position: absolute;
+  position: relative;
   z-index: 1;
   top: 0%;
   left: 0%;
 }
 
-.banner .wrapper {
-  height: 47.5vh;
-  position: relative;
-}
-
 .banner-down {
-  width: 59%;
+  width: 30%;
   position: absolute;
   z-index: 3;
-  bottom: 30%;
-  left: 0%;
+  bottom: 10%;
+  left: 36%;
   color: aliceblue;
+  transform: translate(-50%, -50%);
 }
 
 .banner-down p {
@@ -409,10 +397,11 @@ header {
   form styling starts here
 =================================*/
 .form .wrapper {
-  margin: 30px auto 96px;
+  margin: auto;
 }
 
 form {
+  padding: 25px 0px 96px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -435,9 +424,9 @@ form {
 }
 
 .arrow::before {
-  content: '\3e';
+  content: "\3e";
   padding: 2.5px;
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   font-size: 5px;
   float: right;
   text-indent: 0px;
@@ -473,7 +462,7 @@ form {
   color: aliceblue;
 }
 
-label input[type='radio'] {
+label input[type="radio"] {
   width: 4%;
   height: 13px;
   text-align: center;
@@ -515,7 +504,7 @@ form button {
   font-size: 10px;
 }
 
-.input-border{
+.input-border {
   border: 1.5px solid #ff0000;
   border-radius: 2px;
 }
@@ -535,15 +524,15 @@ footer {
 }
 
 .footer-up .wrapper {
+  padding-bottom: 46px;
   padding-right: 76px;
-  margin: 0px auto 46px;
   display: flex;
   justify-content: space-between;
 }
 
 footer .logo a {
   padding-bottom: 6px;
-  font-size: 27px;
+  font-size: 24px;
 }
 
 .footer-left p {
@@ -586,44 +575,48 @@ footer .logo a {
 
 .social-media {
   padding-left: 6px;
+  margin-left: 0px;
   margin-top: 10px;
   display: flex;
-  gap: 15px;
-  margin-left: 0px;
+  gap: 13px;
 }
 
 .social-media a {
   float: left;
-  text-indent: -999px;
+  text-indent: -9999px;
 }
 
 .social-media a::before {
-  padding: 5px 7px;
   border-radius: 30px;
   background-color: aliceblue;
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
+  font-size: 19px;
   float: right;
   text-indent: 0px;
 }
 
 .facebook::before {
-  content: '\f09a';
+  content: "\f09a";
   color: #153c74;
+  padding: 6px 10px;
 }
 
 .linkedin::before {
-  content: '\f0e1';
+  content: "\f0e1";
   color: #205ba5;
+  padding: 6px 7.5px;
 }
 
 .youtube::before {
-  content: '\f04b';
+  content: "\f04b";
   color: #ce1e1e;
+  padding: 6px 8px;
 }
 
 .twitter::before {
-  content: '\f099';
+  content: "\f099";
   color: #369fe3;
+  padding: 6px 7px;
 }
 
 .footer-down {
@@ -667,31 +660,17 @@ footer .logo a {
     width: 66%;
   }
 
-  .banner-down {
-    width: 40%;
-  }
-
-  .social-media a {
-    float: left;
-    text-indent: -1159px;
-  }
-
   .form .wrapper {
-    margin: 68px auto 96px;
+    margin: auto;
+  }
+
+  .form {
+    padding: 25px 0px 96px;
   }
 }
 
 /*media query for 1360px starts here*/
 @media only screen and (max-width: 1360px) {
-  .social-media a {
-    float: left;
-    text-indent: -1076px;
-  }
-
-  .banner-down {
-    width: 46%;
-  }
-
   .wrapper {
     width: 60%;
   }
@@ -700,8 +679,8 @@ footer .logo a {
 /*media query for 1280px starts here*/
 @media only screen and (max-width: 1280px) {
   .banner-down {
-    width: 47%;
-    bottom: 39%;
+    width: 30%;
+    left: 36%;
   }
 
   .footer-up .wrapper {
@@ -716,12 +695,9 @@ footer .logo a {
   }
 
   .banner-down {
-    width: 37%;
-    bottom: 37%;
-  }
-
-  .banner .wrapper {
-    height: 33.5vh;
+    width: 40%;
+    top: 50%;
+    left: 24%;
   }
 
   .form-div input,
@@ -744,8 +720,8 @@ footer .logo a {
   header styling starts here
 =================================*/
   .wrapper {
-    gap: 22px;
     width: 90%;
+    gap: 22px;
   }
 
   .logo a {
@@ -777,33 +753,9 @@ footer .logo a {
     width: 30%;
   }
 
-  .header-up .wrapper {
+  .header-up {
     padding-bottom: 14px;
   }
-
-  .nav-list {
-    display: flex;
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 15px;
-    gap: 20px;
-  }
-
-  .nav-list {
-    width: 100%;
-    height: 70vh;
-    position: absolute;
-    display: flex;
-    display: none;
-    z-index: 10;
-    top: 100%;
-    right: 0%;
-    flex-direction: column;
-    background-color: #205ba5;
-    text-align: center;
-  }
-
   /*=================================
   header styling ends here
 =================================*/
@@ -817,15 +769,13 @@ footer .logo a {
   }
 
   .banner-down {
-    width: 42%;
-    top: 15%;
-  }
-  .banner .wrapper {
-    z-index: 1;
+    width: 40%;
+    bottom: 20%;
+    left: 25%;
   }
 
   .banner .wrapper {
-    height: 39vh;
+    z-index: 1;
   }
   /*=================================
   banner styling ends here
@@ -838,7 +788,11 @@ footer .logo a {
   }
 
   .form .wrapper {
-    margin: 20px auto 40px;
+    margin: auto;
+  }
+
+  .form {
+    padding: 20px 0px 40px;
   }
 
   .form-div input,
@@ -852,9 +806,12 @@ footer .logo a {
   /*=================================
   footer styling starts here
 =================================*/
+  .footer-up {
+    padding: 0px 0px 26px;
+  }
+
   .footer-up .wrapper {
     width: 85%;
-    margin: 0px auto 26px;
   }
 
   .footer-nav-list {
@@ -886,7 +843,7 @@ footer .logo a {
   }
 
   .logo a {
-    font-size: 34px;
+    font-size: 30px;
   }
 
   .hamburger {
@@ -914,33 +871,9 @@ footer .logo a {
     width: 30%;
   }
 
-  .header-up .wrapper {
+  .header-up {
     padding-bottom: 14px;
   }
-
-  .nav-list {
-    display: flex;
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 15px;
-    gap: 20px;
-  }
-
-  .nav-list {
-    width: 100%;
-    height: 70vh;
-    position: absolute;
-    display: flex;
-    display: none;
-    z-index: 10;
-    top: 100%;
-    right: 0%;
-    flex-direction: column;
-    background-color: #205ba5;
-    text-align: center;
-  }
-
   /*=================================
   header styling ends here
 =================================*/
@@ -955,14 +888,11 @@ footer .logo a {
 
   .banner-down {
     width: 49%;
-    top: 15%;
+    top: 48%;
+    left: 28%;
   }
   .banner .wrapper {
     z-index: 1;
-  }
-
-  .banner .wrapper {
-    height: 39vh;
   }
   /*=================================
   banner styling ends here
@@ -974,8 +904,8 @@ footer .logo a {
     width: 85%;
   }
 
-  .form .wrapper {
-    margin: 20px auto 40px;
+  .form {
+    padding: 20px 0px 40px;
   }
 
   .form-div input,
@@ -989,9 +919,12 @@ footer .logo a {
   /*=================================
   footer styling starts here
 =================================*/
+  .footer-up {
+    padding: 0px 0px 26px;
+  }
+
   .footer-up .wrapper {
     width: 85%;
-    margin: 0px auto 26px;
   }
 
   .footer-nav-list {
@@ -1051,31 +984,8 @@ footer .logo a {
     width: 30%;
   }
 
-  .header-up .wrapper {
+  .header-up {
     padding-bottom: 14px;
-  }
-
-  .nav-list {
-    display: flex;
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 15px;
-    gap: 20px;
-  }
-
-  .nav-list {
-    width: 100%;
-    height: 70vh;
-    position: absolute;
-    display: flex;
-    display: none;
-    z-index: 10;
-    top: 100%;
-    right: 0%;
-    flex-direction: column;
-    background-color: #205ba5;
-    text-align: center;
   }
 
   /*=================================
@@ -1091,15 +1001,12 @@ footer .logo a {
   }
 
   .banner-down {
-    width: 64%;
-    top: 15%;
+    width: 54%;
+    top: 51%;
+    left: 30%;
   }
   .banner .wrapper {
     z-index: 1;
-  }
-
-  .banner .wrapper {
-    height: 39vh;
   }
   /*=================================
   banner styling ends here
@@ -1111,8 +1018,8 @@ footer .logo a {
     width: 85%;
   }
 
-  .form .wrapper {
-    margin: 20px auto 40px;
+  .form {
+    padding: 20px 0px 40px;
   }
 
   .form-div input,
@@ -1126,9 +1033,12 @@ footer .logo a {
   /*=================================
   footer styling starts here
 =================================*/
+  .footer-up {
+    padding: 0px 0px 26px;
+  }
+
   .footer-up .wrapper {
     width: 85%;
-    margin: 0px auto 26px;
     flex-direction: column;
   }
 
@@ -1208,33 +1118,9 @@ footer .logo a {
     width: 30%;
   }
 
-  .header-up .wrapper {
+  .header-up {
     padding-bottom: 14px;
   }
-
-  .nav-list {
-    display: flex;
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 15px;
-    gap: 20px;
-  }
-
-  .nav-list {
-    width: 100%;
-    height: 70vh;
-    position: absolute;
-    display: flex;
-    display: none;
-    z-index: 10;
-    top: 100%;
-    right: 0%;
-    flex-direction: column;
-    background-color: #205ba5;
-    text-align: center;
-  }
-
   /*=================================
 header styling ends here
 =================================*/
@@ -1248,15 +1134,12 @@ banner styling starts here
   }
 
   .banner-down {
-    width: 87%;
-    top: 15%;
+    width: 81%;
+    top: 55%;
+    left: 45%;
   }
   .banner .wrapper {
     z-index: 1;
-  }
-
-  .banner .wrapper {
-    height: 39vh;
   }
   /*=================================
 banner styling ends here
@@ -1268,8 +1151,8 @@ form styling starts here
     width: 85%;
   }
 
-  .form .wrapper {
-    margin: 20px auto 40px;
+  .form {
+    padding: 20px 0px 40px;
   }
 
   .form-div input,
@@ -1286,9 +1169,12 @@ form styling ends here
   /*=================================
 footer styling starts here
 =================================*/
+  .footer-up {
+    padding: 0px 0px 26px;
+  }
+
   .footer-up .wrapper {
     width: 85%;
-    margin: 0px auto 26px;
     flex-direction: column;
   }
 
@@ -1314,7 +1200,6 @@ footer styling ends here
 =================================*/
 }
 
-/*media query starts*/
 /*media query for 375px starts here*/
 @media only screen and (max-width: 375px) {
   /*=================================
@@ -1358,33 +1243,9 @@ footer styling ends here
     width: 30%;
   }
 
-  .header-up .wrapper {
+  .header-up {
     padding-bottom: 14px;
   }
-
-  .nav-list {
-    display: flex;
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 15px;
-    gap: 20px;
-  }
-
-  .nav-list {
-    width: 100%;
-    height: 70vh;
-    position: absolute;
-    display: flex;
-    display: none;
-    z-index: 10;
-    top: 100%;
-    right: 0%;
-    flex-direction: column;
-    background-color: #205ba5;
-    text-align: center;
-  }
-
   /*=================================
   header styling ends here
 =================================*/
@@ -1398,15 +1259,11 @@ footer styling ends here
   }
 
   .banner-down {
-    width: 84%;
-    top: 15%;
+    width: 85%;
+    top: 52%;
   }
-  .banner .wrapper {
+  s .banner .wrapper {
     z-index: 1;
-  }
-
-  .banner .wrapper {
-    height: 39vh;
   }
   /*=================================
   banner styling ends here
@@ -1418,8 +1275,8 @@ footer styling ends here
     width: 85%;
   }
 
-  .form .wrapper {
-    margin: 20px auto 40px;
+  .form {
+    padding: 20px 0px 40px;
   }
 
   .form-div input,
@@ -1433,9 +1290,143 @@ footer styling ends here
   /*=================================
   footer styling starts here
 =================================*/
+  .footer-up {
+    padding: 0px 0px 26px;
+  }
+
   .footer-up .wrapper {
     width: 85%;
-    margin: 0px auto 26px;
+    flex-direction: column;
+  }
+
+  .footer-nav-list {
+    padding-bottom: 0%;
+    padding-top: 9px;
+  }
+
+  .social-media {
+    gap: 8px;
+  }
+
+  .footer-down-list,
+  .footer-down .wrapper {
+    flex-direction: column;
+  }
+
+  .footer-down-list a {
+    border-right: none;
+  }
+  /*=================================
+  footer styling ends here
+=================================*/
+}
+
+/*media query for 320px starts here*/
+@media only screen and (max-width: 320px) {
+  /*=================================
+  header styling starts here
+=================================*/
+  .wrapper {
+    width: 95%;
+    gap: 22px;
+  }
+
+  .corner::before {
+    font-size: 15px;
+  }
+
+  .logo a {
+    font-size: 21px;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
+
+  .line {
+    border-color: grey;
+  }
+
+  .header-left {
+    width: 50%;
+  }
+
+  .header-right {
+    width: 34%;
+  }
+
+  .header-right input {
+    width: 80%;
+    padding: 2px;
+  }
+
+  .header-right button {
+    width: 30%;
+    padding: 2px;
+  }
+
+  .header-up {
+    padding-bottom: 14px;
+  }
+  /*=================================
+  header styling ends here
+=================================*/
+  /*=================================
+  banner styling starts here
+=================================*/
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .banner-down {
+    width: 85%;
+    top: 52%;
+  }
+  s .banner .wrapper {
+    z-index: 1;
+  }
+  /*=================================
+  banner styling ends here
+=================================*/
+  /*=================================
+  form styling starts here
+=================================*/
+  .form .wrapper {
+    width: 85%;
+  }
+
+  .form {
+    padding: 20px 0px 40px;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 60%;
+  }
+  form button {
+    width: 21%;
+  }
+
+  form {
+    padding-top: 0px;
+    padding: 0px;
+  }
+
+  /*=================================
+  form styling ends here
+=================================*/
+  /*=================================
+  footer styling starts here
+=================================*/
+  .footer-up {
+    padding: 0px 0px 26px;
+  }
+
+  .footer-up .wrapper {
+    width: 85%;
     flex-direction: column;
   }
 
@@ -1466,8 +1457,29 @@ footer styling ends here
     display: flex;
     z-index: 3;
   }
+
   .nav-list {
     display: none;
+  }
+
+  .nav-list-onclick li {
+    border-right: none;
+  }
+
+  .nav-list-onclick {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    right: 0%;
+    background-color: #205ba5;
+    font-size: 15px;
+    gap: 20px;
+    text-align: center;
   }
 }
 
@@ -1478,31 +1490,37 @@ footer styling ends here
   .header-down a:hover {
     color: #808080;
     cursor: pointer;
+    transition: 2s;
   }
 
   .header-right button:hover {
     background-color: #808080;
     color: aliceblue;
     cursor: pointer;
+    transition: 2s;
   }
 
   form button:hover {
     background-color: #808080;
     cursor: pointer;
+    transition: 2s;
   }
 
   .footer-nav-list a:hover {
     color: #808080;
     cursor: pointer;
+    transition: 2s;
   }
 
   .footer-down-list a:hover {
     color: #808080;
     cursor: pointer;
+    transition: 2s;
   }
 
   .social-media a:hover::before {
     background-color: #808080;
     cursor: pointer;
+    transition: 2s;
   }
 }
