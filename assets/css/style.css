@@ -247,25 +247,6 @@ header {
   gap: 5px;
 }
 
-.line2-onclick {
-  display: none;
-  transition: 0.1s;
-}
-
-.hamburger-onclick {
-  padding: 0px 0px 0px;
-}
-
-.line1-onclick {
-  -webkit-transform: rotate(-45deg) translateY(4px);
-  transform: rotate(-45deg) translateY(6px);
-}
-
-.line3-onclicks {
-  -webkit-transform: rotate(45deg) translateY(-4px);
-  transform: rotate(45deg) translateY(-6px);
-}
-
 .line {
   content: "";
   width: 100%;
@@ -372,7 +353,7 @@ header {
 .banner-down {
   width: 30%;
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   bottom: 10%;
   left: 36%;
   color: aliceblue;
@@ -1459,6 +1440,26 @@ footer styling ends here
     z-index: 3;
   }
 
+  .line2-onclick {
+    display: none;
+    transition: 0.1s;
+  }
+  
+  .hamburger-onclick {
+    padding: 0px 0px 0px;
+  }
+  
+  .line1-onclick {
+    -webkit-transform: rotate(-45deg) translateY(4px);
+    transform: rotate(-45deg) translateY(6px);
+  }
+  
+  .line3-onclick{
+    -webkit-transform: rotate(45deg) translateY(-4px);
+    transform: rotate(45deg) translateY(-6px);
+  }
+
+  
   .nav-list {
     display: none;
   }

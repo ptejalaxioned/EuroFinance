@@ -8,6 +8,11 @@ let work_email = document.querySelector("#work-email");
 let yes = document.querySelector("#yes");
 let no = document.querySelector("#no");
 let form = document.querySelector("form");
+let line1 = document.querySelector(".line1");
+let line2 = document.querySelector(".line2");
+let line3 = document.querySelector(".line3");
+let line= document.querySelector(".line");
+
 
 let fname_div = document.querySelector(".fname-div");
 let lname_div = document.querySelector(".lname-div");
@@ -19,14 +24,36 @@ let work_email_div = document.querySelector(".email-div");
 let yes_no_div = document.querySelector(".yes-no");
 
 let hamburger = document.querySelector(".hamburger");
-let nav_list  = document.querySelector(".nav-list ");
+let nav_list  = document.querySelector(".nav-list");
 
 
 hamburger.addEventListener("click",()=>{
-  
-    nav_list.style.display="flex"
-  
+    nav_list.classList.toggle("nav-list-onclick")
+    line1.classList.toggle("line1-onclick")
+    line2.classList.toggle("line2-onclick")
+    line3.classList.toggle("line3-onclick")
+    hamburger.classList.toggle("hamburger-onclick")
 })
+// .line2-onclick {
+//     display: none;
+//     transition: 0.1s;
+//   }
+  
+//   .hamburger-onclick {
+//     padding: 0px 0px 0px;
+//   }
+  
+//   .line1-onclick {
+//     -webkit-transform: rotate(-45deg) translateY(4px);
+//     transform: rotate(-45deg) translateY(6px);
+//   }
+  
+//   .line3-onclick {
+//     -webkit-transform: rotate(45deg) translateY(-4px);
+//     transform: rotate(45deg) translateY(-6px);
+//   }
+  
+
 
 
 form.addEventListener("submit", (e) => {
