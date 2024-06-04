@@ -226,9 +226,12 @@ header {
 }
 
 .header-up .wrapper {
-  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
+}
+
+.header-up{
+padding-bottom: 30px;
 }
 
 .hamburger {
@@ -395,10 +398,10 @@ padding: 0px 0px 0px;
 =================================*/
 .form .wrapper {
   margin: auto;
-  padding:25px auto 96px;
 }
 
 form {
+  padding:25px 0px 96px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -521,15 +524,15 @@ footer {
 }
 
 .footer-up .wrapper {
-  padding-right: 76px;
   padding-bottom: 46px;
+  padding-right: 76px;
   display: flex;
   justify-content: space-between;
 }
 
 footer .logo a {
   padding-bottom: 6px;
-  font-size: 27px;
+  font-size: 24px;
 }
 
 .footer-left p {
@@ -659,6 +662,9 @@ footer .logo a {
 
   .form .wrapper {
     margin: auto ;
+  }
+
+  .form{
     padding:  25px 0px 96px;
   }
 }
@@ -690,8 +696,10 @@ footer .logo a {
   }
 
   .banner-down {
-    width: 37%;
-    bottom: 37%;
+    width: 40%;
+    top: 50%;
+    left: 24%;
+
   }
 
   .form-div input,
@@ -747,7 +755,7 @@ footer .logo a {
     width: 30%;
   }
 
-  .header-up .wrapper {
+  .header-up{
     padding-bottom: 14px;
   }
   /*=================================
@@ -763,12 +771,15 @@ footer .logo a {
   }
 
   .banner-down {
-    width: 42%;
-    top: 15%;
-  }
+    width: 40%;
+    bottom: 20%;
+    left: 25%;
+}
+  
   .banner .wrapper {
     z-index: 1;
-  }
+  
+}
   /*=================================
   banner styling ends here
 =================================*/
@@ -780,8 +791,11 @@ footer .logo a {
   }
 
   .form .wrapper {
-  padding: 20px 0px 40px;
   margin: auto
+  }
+
+  .form{
+    padding: 20px 0px 40px;
   }
 
   .form-div input,
@@ -795,9 +809,12 @@ footer .logo a {
   /*=================================
   footer styling starts here
 =================================*/
+.footer-up{
+  padding: 0px 0px 26px;
+}
+
   .footer-up .wrapper {
     width: 85%;
-    padding: 0px 0px 26px;
   }
 
   .footer-nav-list {
@@ -829,8 +846,8 @@ footer .logo a {
   }
 
   .logo a {
-    font-size: 34px;
-  }
+    font-size: 30px;
+  } 
 
   .hamburger {
     display: flex;
@@ -857,7 +874,7 @@ footer .logo a {
     width: 30%;
   }
 
-  .header-up .wrapper {
+  .header-up {
     padding-bottom: 14px;
   }
   /*=================================
@@ -874,7 +891,8 @@ footer .logo a {
 
   .banner-down {
     width: 49%;
-    top: 15%;
+    top: 48%;
+    left: 28%;
   }
   .banner .wrapper {
     z-index: 1;
@@ -889,7 +907,7 @@ footer .logo a {
     width: 85%;
   }
 
-  .form .wrapper {
+  .form{
     padding: 20px 0px 40px;
   }
 
@@ -904,9 +922,12 @@ footer .logo a {
   /*=================================
   footer styling starts here
 =================================*/
+.footer-up{
+  padding: 0px 0px 26px;
+}
+
   .footer-up .wrapper {
     width: 85%;
-    padding: 0px 0px 26px;
   }
 
   .footer-nav-list {
@@ -966,7 +987,7 @@ footer .logo a {
     width: 30%;
   }
 
-  .header-up .wrapper {
+  .header-up {
     padding-bottom: 14px;
   }
 
@@ -983,8 +1004,9 @@ footer .logo a {
   }
 
   .banner-down {
-    width: 64%;
-    top: 15%;
+    width: 54%;
+    top: 51%;
+    left: 30%;
   }
   .banner .wrapper {
     z-index: 1;
@@ -999,7 +1021,7 @@ footer .logo a {
     width: 85%;
   }
 
-  .form .wrapper {
+  .form{
   padding: 20px 0px 40px;
   }
 
@@ -1014,9 +1036,12 @@ footer .logo a {
   /*=================================
   footer styling starts here
 =================================*/
+.footer-up{
+  padding: 0px 0px 26px;
+}
+
   .footer-up .wrapper {
     width: 85%;
-    padding: 0px 0px 26px;
     flex-direction: column;
   }
 
@@ -1096,7 +1121,7 @@ footer .logo a {
     width: 30%;
   }
 
-  .header-up .wrapper {
+  .header-up {
     padding-bottom: 14px;
   }
   /*=================================
@@ -1112,8 +1137,9 @@ banner styling starts here
   }
 
   .banner-down {
-    width: 87%;
-    top: 15%;
+    width: 81%;
+    top: 55%;
+    left: 45%;
   }
   .banner .wrapper {
     z-index: 1;
@@ -1128,7 +1154,7 @@ form styling starts here
     width: 85%;
   }
 
-  .form .wrapper {
+  .form{
   padding: 20px 0px 40px;
   }
 
@@ -1146,9 +1172,12 @@ form styling ends here
   /*=================================
 footer styling starts here
 =================================*/
+.footer-up{
+  padding: 0px 0px 26px;
+}
+
   .footer-up .wrapper {
     width: 85%;
-    padding: 0px 0px 26px;
     flex-direction: column;
   }
 
@@ -1174,7 +1203,6 @@ footer styling ends here
 =================================*/
 }
 
-/*media query starts*/
 /*media query for 375px starts here*/
 @media only screen and (max-width: 375px) {
   /*=================================
@@ -1218,7 +1246,7 @@ footer styling ends here
     width: 30%;
   }
 
-  .header-up .wrapper {
+  .header-up {
     padding-bottom: 14px;
   }
   /*=================================
@@ -1234,9 +1262,10 @@ footer styling ends here
   }
 
   .banner-down {
-    width: 84%;
-    top: 15%;
-  }
+    width: 85%;
+    top: 52%;
+}
+  s
   .banner .wrapper {
     z-index: 1;
   }
@@ -1250,7 +1279,7 @@ footer styling ends here
     width: 85%;
   }
 
-  .form .wrapper {
+  .form{
     padding: 20px 0px 40px;
   }
 
@@ -1265,9 +1294,12 @@ footer styling ends here
   /*=================================
   footer styling starts here
 =================================*/
+.footer-up {
+  padding: 0px 0px 26px;
+}
+
   .footer-up .wrapper {
     width: 85%;
-    padding: 0px 0px 26px;
     flex-direction: column;
   }
 
@@ -1292,6 +1324,140 @@ footer styling ends here
   footer styling ends here
 =================================*/
 }
+
+/*media query for 320px starts here*/
+@media only screen and (max-width: 320px) {
+  /*=================================
+  header styling starts here
+=================================*/
+  .wrapper {
+    width: 95%;
+    gap: 22px;
+  }
+
+  .corner::before {
+    font-size: 15px;
+  }
+
+  .logo a {
+    font-size: 21px;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
+
+  .line {
+    border-color: grey;
+  }
+
+  .header-left {
+    width: 50%;
+  }
+
+  .header-right {
+    width: 34%;
+  }
+
+  .header-right input {
+    width: 80%;
+      padding: 2px;
+  }
+
+  .header-right button {
+    width: 30%;
+    padding: 2px;
+  }
+
+  .header-up {
+    padding-bottom: 14px;
+  }
+  /*=================================
+  header styling ends here
+=================================*/
+  /*=================================
+  banner styling starts here
+=================================*/
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .banner-down {
+    width: 85%;
+    top: 52%;
+}
+  s
+  .banner .wrapper {
+    z-index: 1;
+  }
+  /*=================================
+  banner styling ends here
+=================================*/
+  /*=================================
+  form styling starts here
+=================================*/
+  .form .wrapper {
+    width: 85%;
+  }
+
+  .form{
+    padding: 20px 0px 40px;
+  }
+
+  .form-div input,
+  .form-div select {
+    width: 60%;
+  }
+      form button {
+        width: 21%;
+    }
+
+    form{
+      padding-top: 0px;
+      padding: 0px;
+    }
+
+
+  /*=================================
+  form styling ends here
+=================================*/
+  /*=================================
+  footer styling starts here
+=================================*/
+.footer-up {
+  padding: 0px 0px 26px;
+}
+
+  .footer-up .wrapper {
+    width: 85%;
+    flex-direction: column;
+  }
+
+  .footer-nav-list {
+    padding-bottom: 0%;
+    padding-top: 9px;
+  }
+
+  .social-media {
+    gap: 8px;
+  }
+
+  .footer-down-list,
+  .footer-down .wrapper {
+    flex-direction: column;                                                     
+  }
+
+  .footer-down-list a {
+    border-right: none;
+  }   
+  /*=================================
+  footer styling ends here
+=================================*/
+}
+
 
 @media only screen and (max-width: 995px) {
   .hamburger {
